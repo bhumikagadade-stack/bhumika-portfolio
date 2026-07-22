@@ -1,0 +1,61 @@
+.education-card {
+  margin-top: 48px;
+  padding: 36px;
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.education-card__icon {
+  width: 54px;
+  height: 54px;
+  min-width: 54px;
+  border-radius: var(--radius-sm);
+  background: var(--gradient-signal);
+  color: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+
+.education-card__top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.education-card__top h3 { font-size: 1.2rem; }
+
+.education-card__period {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--cyan);
+}
+
+.education-card__university {
+  color: var(--text-secondary);
+  margin: 8px 0 18px;
+  font-size: 0.95rem;
+}
+
+.education-card__courses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.education-card__courses span {
+  font-size: 0.78rem;
+  font-family: var(--font-mono);
+  padding: 6px 12px;
+  border-radius: 100px;
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+}
+
+@media (max-width: 620px) {
+  .education-card { flex-direction: column; padding: 26px; }
+}

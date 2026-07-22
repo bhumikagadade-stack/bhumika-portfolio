@@ -1,0 +1,35 @@
+.research__grid {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.research-card {
+  padding: 28px 24px;
+}
+
+.research-card__index {
+  display: block;
+  font-family: var(--font-mono);
+  color: var(--violet);
+  font-size: 0.82rem;
+  margin-bottom: 14px;
+}
+
+.research-card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+}
+
+.research-card p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 980px) {
+  .research__grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 620px) {
+  .research__grid { grid-template-columns: 1fr; }
+}
